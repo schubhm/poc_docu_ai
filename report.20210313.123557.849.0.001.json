@@ -1,0 +1,477 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210313.123557.849.0.001.json",
+    "dumpEventTime": "2021-03-13T12:35:57Z",
+    "dumpEventTimeStamp": "1615638957602",
+    "processId": 849,
+    "cwd": "/home/special8987",
+    "commandLine": [
+      "/usr/local/nvm/versions/node/v12.14.1/bin/node",
+      "/google/devshell/editor/theia/plugins/googlecloudtools-cloudcode/extension/dist/server/server.js",
+      "--node-ipc",
+      "--clientProcessId=783"
+    ],
+    "nodejsVersion": "v12.14.1",
+    "glibcVersionRuntime": "2.28",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.14.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.89+",
+    "osVersion": "#1 SMP Wed Feb 24 19:44:28 PST 2021",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+        "speed": 2200,
+        "user": 870500,
+        "nice": 0,
+        "sys": 270700,
+        "idle": 4142300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+        "speed": 2200,
+        "user": 899900,
+        "nice": 0,
+        "sys": 298500,
+        "idle": 4028900,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "02:42:ac:11:00:04",
+        "address": "172.17.0.4",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "cs-228769835861-default-default-xqznk"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b05ba5",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x00000000009dbd93",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3b18e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3b509",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ce68a5",
+      "symbol": " [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ce6f36",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf2dca",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf3cd5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cf66e8",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cbd017",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ff31d9",
+      "symbol": "v8::internal::Runtime_AllocateInOldGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000001376259",
+      "symbol": " [/usr/local/nvm/versions/node/v12.14.1/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2154369024,
+    "totalCommittedMemory": 2149813072,
+    "usedMemory": 2145062328,
+    "availableMemory": 48364216,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 491472,
+        "capacity": 2094976,
+        "used": 0,
+        "available": 2094976
+      },
+      "old_space": {
+        "memorySize": 2106175488,
+        "committedMemory": 2105955368,
+        "capacity": 2103412984,
+        "used": 2102914568,
+        "available": 498416
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 451712,
+        "capacity": 370688,
+        "used": 370688,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 3149824,
+        "committedMemory": 2982816,
+        "capacity": 1952000,
+        "used": 1952000,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 39849984,
+        "committedMemory": 39849984,
+        "capacity": 39789224,
+        "used": 39789224,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094976,
+        "used": 0,
+        "available": 2094976
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 64.023,
+    "kernelCpuSeconds": 2.15132,
+    "cpuConsumptionPercent": 13.9608,
+    "maxRss": 2231738368,
+    "pageFaults": {
+      "IORequired": 9,
+      "IONotRequired": 601345
+    },
+    "fsActivity": {
+      "reads": 52208,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 20.6107,
+    "kernelCpuSeconds": 1.65865,
+    "cpuConsumptionPercent": 4.69818,
+    "fsActivity": {
+      "reads": 34208,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/bin/bash",
+    "npm_package_theiaPluginsDir": "plugins",
+    "npm_package_theiaPlugins_vscode_builtin_docker": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/docker-1.39.1-prel.vsix",
+    "npm_package_theia_frontend_config_defaultIconTheme": "theia-file-icons",
+    "npm_package_theiaPlugins_vscode_builtin_npm": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/npm-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_metrics": "^1.9.0",
+    "npm_package_dependencies__theia_mini_browser": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_merge_conflicts": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/merge-conflict-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_terminal": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_rust": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/rust-1.39.1-prel.vsix",
+    "rvm_prefix": "/usr/local",
+    "npm_package_dependencies__theia_filesystem": "^1.9.0",
+    "npm_package_dependencies__theia_callhierarchy": "^1.9.0",
+    "EDITOR_IN_CLOUD_SHELL": "true",
+    "NODE": "/usr/local/nvm/versions/node/v12.14.1/bin/node",
+    "npm_config_ignore_scripts": "",
+    "GOOGLE_USER_ID": "228769835861",
+    "npm_package_dependencies__theia_editor": "^1.9.0",
+    "CLOUD_SHELL": "true",
+    "npm_package_theiaPlugins_vscode_builtin_theme_red": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-red-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_r": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/r-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_powershell": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/powershell-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_python": "https://github.com/microsoft/vscode-python/releases/download/2020.1.58038/ms-python-release.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_theme_dimmed": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-monokai-dimmed-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_java_debug": "https://github.com/microsoft/vscode-java-debug/releases/download/0.24.0/vscjava.vscode-java-debug-0.24.0.vsix",
+    "npm_package_private": "true",
+    "npm_package_dependencies__theia_plugin": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_theme_abyss": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-abyss-1.39.1-prel.vsix",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"theia\"],\"original\":[\"theia\",\"start\",\"--hostname=0.0.0.0\",\"--startup-timeout=-1\",\"--port=3000\",\"--plugins=local-dir:/google/devshell/editor/theia/plugins\",\"/home/special8987\"]}",
+    "npm_config_bin_links": "true",
+    "npm_package_theiaPlugins_vscode_builtin_json_language_features": "https://open-vsx.org/api/vscode/json-language-features/1.46.1/file/vscode.json-language-features-1.46.1.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_razor": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/razor-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_java_dependency_viewer": "https://github.com/microsoft/vscode-java-dependency/releases/download/0.6.0/vscode-java-dependency-0.6.0.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_objective_c": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/objective-c-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_task": "^1.9.0",
+    "npm_package_dependencies__theia_plugin_ext": "^1.9.0",
+    "PWD": "/google/devshell/editor/theia",
+    "npm_package_theiaPlugins_vscode_builtin_shaderlab": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/shaderlab-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_shellscript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/shellscript-1.39.1-prel.vsix",
+    "npm_config_save_prefix": "^",
+    "LOGNAME": "special8987",
+    "npm_package_devDependencies__theia_cli": "^1.9.0",
+    "npm_package_dependencies__theia_variable_resolver": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_fsharp": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/fsharp-1.39.1-prel.vsix",
+    "rvm_version": "1.29.12 (latest)",
+    "npm_package_theiaPlugins_vscode_builtin_yaml": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/yaml-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_messages": "^1.9.0",
+    "npm_package_dependencies__theia_preferences": "^1.9.0",
+    "npm_package_dependencies__theia_navigator": "^1.9.0",
+    "_": "/google/devshell/editor/theia/node_modules/.bin/theia",
+    "npm_package_theiaPlugins_vscode_flutter": "https://github.com/Dart-Code/Flutter/releases/download/v3.8.1/Dart-Code.flutter-3.8.1.vsix",
+    "DEVSHELL_CLIENTS_DIR": "/var/run/google/devshell",
+    "npm_package_theiaPlugins_vscode_builtin_debug_auto_launch": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/debug-auto-launch-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_xml": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/xml-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_hlsl": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/hlsl-1.39.1-prel.vsix",
+    "npm_package_devDependencies_rimraf": "^2.6.1",
+    "npm_package_theia_target": "browser",
+    "npm_package_theiaPlugins_vscode_builtin_sql": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/sql-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_grunt": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/grunt-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_theme_solarized_dark": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-solarized-dark-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_lua": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/lua-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_html": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/html-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_workspace": "^1.9.0",
+    "HOME": "/home/special8987",
+    "npm_config_version_git_tag": "true",
+    "npm_package_theiaPlugins_vscode_dart": "https://github.com/Dart-Code/Dart-Code/releases/download/v3.8.1/Dart-Code.dart-code-3.8.1.vsix",
+    "npm_config_init_license": "MIT",
+    "npm_package_theiaPlugins_vscode_builtin_cpp": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/cpp-1.39.1-prel.vsix",
+    "npm_package_version": "1.9.0",
+    "npm_package_scripts_prepare": "theia build",
+    "npm_package_theiaPlugins_vscode_builtin_groovy": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/groovy-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_typescript_language_features": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/typescript-language-features-1.39.1-prel.vsix",
+    "MINIKUBE_FORCE_SYSTEMD": "true",
+    "npm_config_version_commit_hooks": "true",
+    "npm_package_theiaPlugins_vscode_builtin_icon_theme_seti": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/vscode-theme-seti-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_css_language_features": "https://open-vsx.org/api/vscode/css-language-features/1.45.1/file/vscode.css-language-features-1.45.1.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_coffeescript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/coffeescript-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_ruby": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/ruby-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_output": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_clojure": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/clojure-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_theme_defaults": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-defaults-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_clangd": "https://open-vsx.org/api/llvm-vs-code-extensions/vscode-clangd/0.1.5/file/llvm-vs-code-extensions.vscode-clangd-0.1.5.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_log": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/log-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_netcoredbg_theia_plugin": "https://github.com/redhat-developer/netcoredbg-theia-plugin/releases/download/v0.0.3/netcoredbg_theia_plugin.theia",
+    "INIT_CWD": "/google/devshell/editor/theia",
+    "npm_package_theiaPlugins_vscode_builtin_java": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/java-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_configuration_editing": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/configuration-editing-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_core": "^1.9.0",
+    "rvm_bin_path": "/usr/local/rvm/bin",
+    "npm_config_version_tag_prefix": "v",
+    "npm_package_theiaPlugins_vscode_builtin_handlebars": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/handlebars-1.39.1-prel.vsix",
+    "YARN_WRAP_OUTPUT": "false",
+    "CLOUDSHELL_OPEN_DIR": "cloudshell_open",
+    "npm_package_theiaPlugins_vscode_builtin_swift": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/swift-1.39.1-prel.vsix",
+    "npm_package_name": "theia-for-cloud-shell",
+    "npm_package_theiaPlugins_vscode_builtin_theme_kimbie_dark": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-kimbie-dark-1.39.1-prel.vsix",
+    "npm_package_dependencies_cloud_shell_getting_started": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_editorconfig": "https://github.com/theia-ide/editorconfig-vscode/releases/download/v0.14.4/EditorConfig-0.14.4.vsix",
+    "USER": "special8987",
+    "npm_package_theiaPlugins_vscode_builtin_markdown_language_features": "https://open-vsx.org/api/vscode/markdown-language-features/1.39.1/file/vscode.markdown-language-features-1.39.1.vsix",
+    "npm_package_theiaPlugins_vscode_maven": "https://github.com/microsoft/vscode-maven/releases/download/0.21.4/vscode-maven-0.21.4.vsix",
+    "npm_package_dependencies__theia_outline_view": "^1.9.0",
+    "npm_package_dependencies_cloud_shell_extension": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_json": "https://open-vsx.org/api/vscode/json/1.46.1/file/vscode.json-1.46.1.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_scss": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/scss-1.39.1-prel.vsix",
+    "npm_package_scripts_quickbuild": "theia build --mode development",
+    "npm_package_scripts_watch": "theia build --watch",
+    "BASHRC_PATH": "/home/special8987/.bashrc",
+    "npm_package_theiaPlugins_vscode_builtin_theme_tomorrow_night_blue": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-tomorrow-night-blue-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_csharp": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/csharp-1.39.1-prel.vsix",
+    "npm_lifecycle_event": "theia",
+    "SHLVL": "0",
+    "npm_package_theiaPlugins_vscode_builtin_less": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/less-1.39.1-prel.vsix",
+    "npm_config_version_git_sign": "",
+    "npm_package_theia_frontend_config_defaultTheme": "light",
+    "npm_package_dependencies__theia_markers": "^1.9.0",
+    "npm_config_version_git_message": "v%s",
+    "npm_package_theiaPlugins_vscode_builtin_css": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/css-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_pug": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/pug-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_emmet": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/emmet-1.39.1-prel.vsix",
+    "CLOUDSHELL_ENVIRONMENT": "prod",
+    "npm_package_theiaPlugins_vscode_builtin_theme_monokai": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-monokai-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_gulp": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/gulp-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_perl": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/perl-1.39.1-prel.vsix",
+    "npm_package_scripts_clean": "theia clean && yarn rimraf webpack.config.js",
+    "npm_config_user_agent": "yarn/1.22.10 npm/? node/v12.14.1 linux x64",
+    "npm_package_theiaPlugins_theia_csharp": "https://github.com/redhat-developer/omnisharp-theia-plugin/releases/download/v0.0.6/omnisharp_theia_plugin.theia",
+    "npm_package_theiaPlugins_vscode_php_debug": "https://github.com/felixfbecker/vscode-php-debug/releases/download/v1.13.0/php-debug.vsix",
+    "npm_package_theiaPlugins_vscode_ruby": "https://github.com/rubyide/vscode-ruby/releases/download/v0.25.0/ruby-0.25.0.vsix",
+    "npm_package_dependencies__theia_preview": "^1.9.0",
+    "npm_execpath": "/usr/local/nvm/versions/node/v12.14.1/lib/node_modules/yarn/bin/yarn.js",
+    "npm_package_theiaPlugins_vscode_builtin_go": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/go-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_monaco": "^1.9.0",
+    "BASHRC_GOOGLE_PATH": "/google/devshell/bashrc.google",
+    "npm_package_theiaPlugins_vscode_eslint": "https://github.com/theia-ide/vscode-eslint/releases/download/release%2F2.0.15/vscode-eslint-2.0.15.vsix",
+    "npm_config_strict_ssl": "true",
+    "npm_package_theiaPlugins_vscode_builtin_make": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/make-1.39.1-prel.vsix",
+    "MINIKUBE_HOME": "/google/minikube",
+    "npm_package_dependencies__theia_debug": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_bat": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/bat-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_node_debug2": "https://github.com/theia-ide/vscode-node-debug2/releases/download/v1.33.0/node-debug2-1.33.0.vsix",
+    "npm_package_theiaPlugins_vscode_java_test": "https://github.com/microsoft/vscode-java-test/releases/download/0.22.0/vscjava.vscode-java-test-0.22.0.vsix",
+    "npm_package_dependencies__theia_file_search": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_node_debug": "https://github.com/theia-ide/vscode-node-debug/releases/download/v1.35.3/node-debug-1.35.3.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_php": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/php-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_typescript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/typescript-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_python": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/python-1.39.1-prel.vsix",
+    "npm_package_dependencies__theia_git": "^1.9.0",
+    "GCE_ESV2_UNIQUE_ID": "2337079712559468900",
+    "npm_package_scripts_start": "theia start",
+    "PATH": "/tmp/yarn--1615638471110-0.1686323836441892:/google/devshell/editor/theia/node_modules/.bin:/home/special8987/.config/yarn/link/node_modules/.bin:/home/special8987/.yarn/bin:/usr/local/nvm/versions/node/v12.14.1/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/nvm/versions/node/v12.14.1/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/nvm/versions/node/v12.14.1/bin/node_modules/npm/bin/node-gyp-bin:/opt/gradle/bin:/opt/maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin:/usr/local/nvm/versions/node/v12.14.1/bin:/usr/local/rvm/bin:/google/go_appengine:/google/google_appengine:/home/special8987/gopath/bin:/google/gopath/bin:/home/special8987/.gems/bin:/home/special8987/google-cloud-sdk/bin",
+    "npm_package_theiaPlugins_vscode_builtin_javascript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/javascript-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_markdown": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/markdown-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_golang_go_0_18_0": "https://github.com/golang/vscode-go/releases/download/v0.18.0/go-0.18.0.vsix",
+    "npm_package_dependencies__theia_process": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_java_redhat": "https://github.com/redhat-developer/vscode-java/releases/download/v0.54.2/redhat.java-0.54.2.vsix",
+    "npm_package_dependencies__theia_editor_preview": "^1.9.0",
+    "npm_package_theia_frontend_config_applicationName": "Theia for Cloud Shell",
+    "npm_package_dependencies__theia_search_in_workspace": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_theme_quietlight": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/theme-quietlight-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_jake": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/jake-1.39.1-prel.vsix",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_package_dependencies__theia_plugin_ext_vscode": "^1.9.0",
+    "npm_package_theiaPlugins_vscode_builtin_vb": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/vb-1.39.1-prel.vsix",
+    "npm_package_theiaPlugins_vscode_builtin_ini": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/ini-1.39.1-prel.vsix",
+    "npm_config_ignore_optional": "",
+    "npm_node_execpath": "/usr/local/nvm/versions/node/v12.14.1/bin/node",
+    "npm_package_theiaPlugins_vscode_builtin_html_language_features": "https://open-vsx.org/api/vscode/html-language-features/1.48.0-next.4a1bcdafe9/file/vscode.html-language-features-1.48.0-next.4a1bcdafe9.vsix",
+    "rvm_path": "/usr/local/rvm",
+    "npm_package_dependencies__theia_keymaps": "^1.9.0",
+    "MINIKUBE_WANTUPDATENOTIFICATION": "false",
+    "GOPATH": "/home/special8987/gopath:/google/gopath",
+    "CREDENTIALS_SERVICE_PORT": "8998",
+    "npm_package_theiaPlugins_vscode_php_intellisense": "https://github.com/felixfbecker/vscode-php-intellisense/releases/download/v2.3.14/php-intellisense.vsix",
+    "npm_config_init_version": "1.0.0",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en\",\"availableLanguages\":{}}",
+    "VSCODE_PID": "587",
+    "LOCAL_GIT_DIRECTORY": "/usr",
+    "GIT_EXEC_PATH": "/usr/lib/git-core",
+    "THEIA_PARENT_PID": "587",
+    "CLOUDSDK_METRICS_ENVIRONMENT": "cloudcode.vscode",
+    "CLOUDSDK_METRICS_ENVIRONMENT_VERSION": "1.8.0"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2",
+    "/lib/x86_64-linux-gnu/libnss_dns.so.2",
+    "/lib/x86_64-linux-gnu/libresolv.so.2"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "temporal-tensor-307222",
+  "private_key_id": "1d65fd328e091f2380ec31354ed55358d561f551",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCJ7NEPbiBZesg3\nrWQRyOTyeWCFh1UElWSKvROlViwi+6n84mPytUQ8xORO/y+LSwV+sawljsy8HpkV\njCuVN+DdXVbBPYxQcWYtiF//e3vlJTnlr/GniAfF54JddTSIh6Hfwo3PuygDxBM2\nrIU8+HKuBnmbDm34DctsdaF49VYwup/9GQtSn+hBp+nJCGrYiMOaS8FLOVXCy4un\nFdqLAgME5E4MsH1Q9Am38DtDMSF5FokQ3nInHfTpTFL9xRwE/i4gzwPmb3REUwiO\n0jqJKUFG4/d4nzY/SOONW7t1Sn3MHJ6lkpetvSgMQ+OC1jSwavZmXMheAezlEV3D\nYSztCOVnAgMBAAECggEAPLjjLazpVxukTEbtGJtemJXxdbgoKPVwp1go7xCqK9iq\ndShiondFjI+OiGz2zJeB2s50ILDm2CeMdB0bDv3j5PF0AW2MedoDBybURNFjsXWb\nMNEuTfiom2uaTHUOZNF55d5surkGG+pWHysDGd2z94PoQ+itZ5kDJ0P+jBdPE/Jg\nirkEnV/m1HM7lnEa+oRn5k2eMncHCdG/Gvy5xJsGfk6QSZbhq0hY2C8JoznGiBPk\npoOsLdHa8sE1yMzphCE8LjYUzda09sVMBGOhkrHIo2Lx61+FI/EX2Oo8opv9x2j4\naKXBv8SMxD505v9CVSBsjYwHrnLTDjDNZc44eSIQyQKBgQC79RhN6l8FkdueFtTZ\nsu1uDij8vUOam0FAso4qoiPTLUdNGo88b8tu+qqOSIb/ma/IAgIlRstRyKV8n0rx\nZCPXMHRNU+57xrqjErEcHPAfF8A4QIAeu7CTMMGiYaPTfvHwW7xlxSFLqAvNsiYD\n8CqzudY/Oa/5EYBRbRTW7PT3pQKBgQC72vzHm3GMt6QMpoutORisUtmXYjLL47PX\n+mDoSG+kjIh+cmPgDUOTbrl0kKkR2+beEVVHx29Z026yJrK3qEXGUjCTxlm6pQXM\nByFJqisRTFM/eCIRh6OH3AmspYTtpkRnavTdJzzSeUoYYBXLy6nNahdsL7wQVXZP\nWJ4IMZT7GwKBgDxYP1pcoe9W2ezSpbnTQXlxIGWsmjTcHcIY0Z4MenYFdnvhyBT+\nS5Ew92tBC96qSA5t3qR7KzHxunfdaKFBpmQjUWO2S73/mtJaYPSGse05oeQtiTTU\ny6cmIzTwJjnz6tdhjIYcGUmCBXAf/yaKiBs10fxwl/feT5VU8Tjj0O5lAoGAGMV9\nw8yJoqasqUZk8MiwqjianM3EKQKzum03zimPH0Gw1gu7g9X77TsSlX5l7Qb0YKAk\ngLyZwFyTIkbcFj/IQ6ie4z2qo2QTaZ4fE5mu6C8KYzoyM+GQ/N9VH0EMUFI2fvSp\nqWf9Kzv3O1OgTCllEMNGp2t7/yNl4HytCiOPo7UCgYAPs3HciHeICHMQFWV0uDIK\no7AhTyva8CsXHx75P2cBocAJ51zebSbUaMb3z7aR1tWFkj4qJ8j5Qx03rSlmJTgR\nDqu7+OovO1o8LgWnFkmCJGZ6/NYAdpIN3wfjtErhId8NFfj7sR6aeNNvMrkr8zmU\nXR9dcBRNqPeFFZaF6tm/+w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-documentai-sa@temporal-tensor-307222.iam.gserviceaccount.com",
+  "client_id": "115737166143029129330",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-documentai-sa%40temporal-tensor-307222.iam.gserviceaccount.com"
+}
